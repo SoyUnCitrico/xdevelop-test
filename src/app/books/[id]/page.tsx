@@ -1,14 +1,12 @@
 "use client";
 import { useParams } from "next/navigation";
 import { useAuthors, useBook } from "@/hooks/useBooks";
-import { useEffect, useState } from "react";
 import Link from "next/link";
 
 
 export default function BookDetailPage() {
   const { id } = useParams();
   const { data: book, isLoading, isError } = useBook(id as string);
-  console.log(book)
   const authorKeys = book?.authors?.map((a: any) =>
     a?.author?.key?.split("/")[2]
   );

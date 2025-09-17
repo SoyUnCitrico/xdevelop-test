@@ -31,7 +31,7 @@ export async function searchBooks(
 export async function searchBook(
   id: string,
 ): Promise<SearchResponse> {
-  let url = `${API_CONFIG.OPENLIBRARY}/works/${encodeURIComponent(id)}.json`;
+  const url = `${API_CONFIG.OPENLIBRARY}/works/${encodeURIComponent(id)}.json`;
   const res = await fetch(url);
   if (!res.ok) throw new Error("Fallo al descargar el libro");
   return res.json();
@@ -40,7 +40,7 @@ export async function searchBook(
 export async function searchAuthor(
   id: string,
 ): Promise<SearchResponse> {
-  let url = `${API_CONFIG.OPENLIBRARY}/authors/${encodeURIComponent(id)}.json`;
+  const url = `${API_CONFIG.OPENLIBRARY}/authors/${encodeURIComponent(id)}.json`;
   const res = await fetch(url);
   if (!res.ok) throw new Error("Fallo al descargar el autor");
   return res.json();
