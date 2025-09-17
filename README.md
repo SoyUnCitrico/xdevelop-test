@@ -15,14 +15,14 @@ Este proyecto es una **prueba técnica** desarrollada con **Next.js (App Router)
 
 ---
 
-## 🚀 Requisitos
+## Requisitos
 
 - Node.js **>=20**
 - WSL2 (en caso de Windows) con Ubuntu/Debian recomendado
 
 ---
 
-## ⚙️ Instalación
+## Instalación
 
 ```bash
 # Clonar el repositorio
@@ -31,6 +31,7 @@ cd front-xdevelop
 
 # Instalar dependencias
 npm install
+```
 
 ## Arquitectura
 La arquitectura de esta aplicación está diseñada para maximizar la escalabilidad, seguridad y mantenibilidad, aplicando prácticas modernas de desarrollo frontend con Next.js 15 (App Router) y un enfoque modular en la gestión de datos y estado.
